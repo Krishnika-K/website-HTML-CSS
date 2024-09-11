@@ -1,0 +1,276 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: white;
+}
+#home {
+  background-image: url("bg1.jpg");
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  background-size: cover;
+  padding-top: 17rem;
+  padding-bottom: 14rem;
+}
+.home .content {
+  text-align: center;
+  width: 60rem;
+}
+.home .content h4 {
+  color: rgb(4, 34, 59);
+  font-size: 3rem;
+}
+.home .content h4 span {
+  color: orange;
+  font-size: 3rem;
+}
+.home .content p {
+  color: black;
+  font-size: 2rem;
+  padding: 1rem 0;
+  line-height: 1.8;
+}
+.home .content a button {
+  background-color: peachpuff;
+  color: black;
+  padding: 5px 20px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 10px;
+  font-weight: bold;
+}
+nav {
+  background-color: seagreen;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+  box-shadow: 2px 2px;
+  position: sticky;
+  top: 0px;
+  z-index: 23;
+}
+nav button {
+  background-color: peachpuff;
+  color: black;
+  padding: 5px 20px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 10px;
+  font-weight: bold;
+}
+nav button:hover {
+  background-color: gray;
+}
+nav ul {
+  list-style-type: none;
+}
+nav ul a {
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: rgb(250, 250, 250);
+  border-bottom: 3px solid transparent;
+}
+nav ul a:hover {
+  color: white;
+  border-bottom: 3px solid white;
+}
+nav ul a:focus {
+  color: white;
+  border-bottom: 3px solid white;
+}
+h1 {
+  text-align: center;
+  color: burlywood;
+  padding: 20px;
+}
+#items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 30px 20px;
+  grid-column-gap: 20px;
+  grid-row-gap: 30px;
+}
+#items img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  cursor: pointer;
+  transition-duration: 0.2s ease;
+}
+#items img:hover {
+  transform: scale(1.05);
+}
+#items h3 {
+  padding: 5px;
+  text-align: center;
+}
+#items button {
+  padding: 5px 30px;
+  outline: none;
+  border: none;
+  background-color: seagreen;
+  color: aliceblue;
+  cursor: pointer;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+}
+#items button:hover {
+  transform: scale(1.05);
+}
+
+@media screen and (max-width: 1000px) {
+  #items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 770px) {
+  #items {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+body h2 {
+  font-size: 250%;
+  text-align: center;
+  color: gray;
+}
+#heading {
+  width: 90%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin: 20px auto;
+  font-size: 150%;
+}
+.more {
+  background-color: peachpuff;
+  color: black;
+  padding: 5px 20px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 10px;
+  font-weight: bold;
+  display: block;
+  margin: 0 auto;
+}
+#home {
+  background-color: white;
+  height: 100vh;
+}
+
+#contact {
+  background-color: white;
+  height: 100vh;
+}
+a:active {
+  color: black;
+}
+.call {
+  font-size: 150%;
+  text-align: center;
+  color: gray;
+  width: 80%;
+  margin: 50px auto;
+  padding: 10px;
+}
+.contact h2 {
+  font-size: 300%;
+}
+#contact {
+  background-color: whitesmoke;
+  font-size: 14px;
+  padding: 40px;
+}
+.box {
+  display: flex;
+}
+.left {
+  flex-basis: 60%;
+  padding: 40px 60px;
+  background-color: white;
+}
+.right {
+  flex-basis: 60%;
+  padding: 40px;
+  background-color: rgb(193, 188, 226);
+}
+h2 {
+  margin-bottom: 10px;
+}
+.input-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.input-row .input-group {
+  flex-basis: 45%;
+}
+.input-group input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  outline: none;
+  padding-bottom: 5px;
+}
+.input-group label {
+  padding-top: 7px;
+}
+textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  outline: none;
+  padding: 10px;
+  box-sizing: border-box;
+}
+label {
+  margin-bottom: 6px;
+  display: block;
+  color: #1c00b5;
+}
+.left h3 {
+  font-size: 200%;
+  padding-bottom: 20px;
+  color: rgb(36, 35, 35);
+}
+.right h3 {
+  font-size: 200%;
+  padding-bottom: 20px;
+  color: rgb(36, 35, 35);
+}
+#contact button {
+  background-color: rgb(70, 70, 132);
+  width: 100px;
+  padding: 5px 30px;
+  outline: none;
+  border: none;
+  color: aliceblue;
+  cursor: pointer;
+  border-radius: 30px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+tr td:first-child {
+  padding-right: 40px;
+}
+tr td {
+  padding-top: 40px;
+  font-size: 150%;
+  padding-left: 40px;
+  color: white;
+}
